@@ -18,11 +18,15 @@
     font-family: "F1rookies";
     src: url(../assets/fonts/Rookies.ttf);
 }
-
+.container {
+    max-width: 100% !important;
+}
 /* INICIO */
 .container-body-inicio {
     border-top: 0px;
     background-color: #dee0e3;
+    width: 100vw;
+    height: auto;
 }
 
 .caja-body {
@@ -61,7 +65,7 @@ nav {
 }
 
 .navbar-mobile-container {
-    visibility: hidden;
+    display: none;
 }
 
 .menu-mobile-container {
@@ -91,26 +95,10 @@ nav {
     }
 }
 
-.lista-equipos a {
-    color: gray;
-    font-size: 1em;
-    font-family: "f1titulos";
-    text-decoration: none;
-    padding-left: 30px;
-}
-
-.lista-pilotos a {
-    color: grey;
-    font-size: 1em;
-    font-family: "f1titulos";
-    text-decoration: none;
-    padding-left: 30px;
-}
-
 .caja-titulo-header {
     display: grid;
     grid-area: header;
-    width: 100%;
+    width: 75vw;
     height: auto;
     margin-top: 0;
     padding: 0;
@@ -118,7 +106,7 @@ nav {
 
 .imagen-banner {
     object-fit: cover;
-    width: 100%;
+    width: 75vw;
     height: 150px;
 }
 
@@ -131,7 +119,7 @@ nav {
 }
 
 .caja-article {
-    width: 100%;
+    width: 50vw;
     height: auto;
     background-color: white;
     display: grid;
@@ -160,7 +148,7 @@ nav {
 
 .caja-aside {
     display: grid;
-    width: 100%;
+    width: 25vw;
     height: auto;
     background-color: white;
     grid-area: aside;
@@ -174,18 +162,25 @@ nav {
 
 .caja-proximo-GP {
     background-color: #e10600;
+    width: 25vw;
     height: auto;
     text-align: center;
     display: grid;
 }
 
 .caja-imagen-GP {
+    width: 25vw;
     height: auto;
     display: grid;
+    img {
+        width: 25vw;
+        height: auto;
+    }
 }
 
 .caja-titulo-GP {
     background-color: black;
+    width: 25vw;
     height: auto;
     text-align: center;
     display: grid;
@@ -195,9 +190,11 @@ nav {
     color: white;
     font-size: 2em;
     font-family: "F1titulos";
+    width: 25vw;
 }
 
 .caja-horarios {
+    width: 25vw;
     height: auto;
     background-color: #e10600;
     display: grid;
@@ -208,6 +205,7 @@ nav {
     color: white;
     font-size: 1em;
     font-family: "F1textos";
+    width: 25vw;
 }
 
 footer {
@@ -217,12 +215,14 @@ footer {
     text-align: center;
     display: grid;
     grid-area: footer;
+    width: 75vw;
 }
 
 .caja-pie-de-pagina {
-    width: 100%;
+    width: 100vw;
     height: auto;
     background-color: #e10600;
+    grid-area: footer;
 }
 
 .florencia-mancilla {
@@ -264,6 +264,7 @@ footer {
         "firma instagram"
         "comunidad reddit"
         "copy f1";
+        width: 75vw;
 }
 
 /* PILOTOS */
@@ -271,13 +272,13 @@ footer {
     border-top: 0px;
     background-image: url(../assets/images/fondos/muro-negro-puntos.jpg);
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     grid-template-areas:
         "menu header"
         "menu caja-aside-grilla-pilotos"
         "menu footer";
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: auto auto auto;
     column-gap: 1px 32px 32px;
     row-gap: 5px;
@@ -289,8 +290,8 @@ footer {
     grid-template-areas:
         "tituloGrillaPilotos"
         "lista-de-pilotos";
-    grid-column: auto;
-    grid-row: auto;
+    grid-template-columns: 75vw;
+    grid-template-rows: auto;
     grid-area: caja-aside-grilla-pilotos;
     column-gap: 15px;
 }
@@ -328,305 +329,306 @@ footer {
 
 .h2pilotos {
     font-family: "F1Titulos";
-    font-size: 32px;
+    font-size: 24px;
     color: #dee0e3;
 }
 
 .edad {
     font-family: "F1textos";
-    font-size: 28px;
+    font-size: 18px;
     color: #dee0e3;
 }
 
 .equipos {
     font-family: "F1textos";
-    font-size: 28px;
+    font-size: 18px;
     color: #dee0e3;
 }
 
 #verstappen {
     grid-area: piloto1;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/01-33-verstappen.png);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #leclerc {
     grid-area: piloto2;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/02-16-leclerc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #perez {
     grid-area: piloto3;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/03-11-perez.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #russell {
     grid-area: piloto4;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/04-63-russell.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #sainz {
     grid-area: piloto5;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/05-55-sainz.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #hamilton {
     grid-area: piloto6;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/06-44-hamilton.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
+    padding-top: 25px;
     padding-top: 65px;
     padding-bottom: 25px;
 }
 
 #norris {
     grid-area: piloto7;
-    width: 45vw;
+    width: 35vw;
     display: grid;
     background: url(../assets/images/pilotos/pilotos-parrilla/07-4-norris.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #ocon {
     grid-area: piloto8;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/08-31-ocon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #alonso {
     grid-area: piloto9;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/09-14-alonso.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #bottas {
     grid-area: piloto10;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/10-77-bottas.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #magnussen {
     grid-area: piloto11;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/11-20-magnussen.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #gasly {
     grid-area: piloto12;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/12-10-gasly.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #stroll {
     grid-area: piloto13;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/13-18-stroll.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #tsunoda {
     grid-area: piloto14;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/14-22-tsunoda.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #zhou {
     grid-area: piloto15;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/15-24-zhou.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #albon {
     grid-area: piloto16;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/16-23-albon.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #devries {
     grid-area: piloto17;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/17-21-devries.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #piastri {
     grid-area: piloto18;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/18-81-piastri.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #hulkenberg {
     grid-area: piloto19;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/19-27-Hulkenberg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #sargeant {
     grid-area: piloto20;
     display: grid;
-    width: 45vw;
+    width: 35vw;
     background: url(../assets/images/pilotos/pilotos-parrilla/20-2-sargent.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    padding-left: 85px;
-    padding-top: 65px;
+    padding-left: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
 }
 
 #footer-grilla {
     background-color: #e10600;
-    width: auto;
+    width: 100%;
+
 }
 
 /* CIRCUITOS */
@@ -634,13 +636,13 @@ footer {
     border-top: 0px;
     background-image: url(../assets/images/fondos/muro-negro-puntos.jpg);
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     grid-template-areas:
         "menu header"
         "menu caja-aside-grilla-circuitos"
         "menu footer";
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
     grid-template-rows: auto auto auto;
     column-gap: 32px 32px;
     row-gap: 5px;
@@ -655,10 +657,12 @@ footer {
         "lista-circuitos";
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    width: 75vw;
+    height: auto;
 }
 
 .caja-titulo-general {
-    grid-area: headerok;
+    grid-area: header;
     display: grid;
 }
 
@@ -666,12 +670,18 @@ footer {
     display: grid;
     grid-area: titulo-grilla-circuitos;
     text-align: center;
+    font-family: "f1titulos";
+    font-size: 50px;
+    color: #e10600;
 }
 
 .lista-circuitos {
     display: grid;
+    width: 70vw;
     grid-template-columns: 33% 33% 33%;
-    column-gap: 10px;
+    column-gap: 15px;
+    row-gap: 15px;
+    padding-left: 15px;
     grid-template-areas:
         "caja-barein caja-arabia caja-australia"
         "caja-azerbaiyan caja-miami caja-imola"
@@ -699,7 +709,7 @@ footer {
         "nombre-circuito"
         "horarios";
     grid-template-columns: 100%;
-    grid-template-rows: 8% 39% 8% 35%;
+    grid-template-rows: 8% auto 8% auto;
 }
 
 .titulo-gp {
@@ -864,25 +874,26 @@ footer {
     border-top: 0px;
     background-color: gray;
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     grid-template-areas:
         "menu header"
         "menu container-tabla-posiciones"
         "menu footer";
-    grid-template-columns: auto auto;
+    grid-template-columns: 25vw 75vw;
     grid-template-rows: auto auto auto;
 }
 
 .container-tabla-posiciones {
     display: grid;
+    width: 73vw;
     grid-area: container-tabla-posiciones;
     grid-template-areas:
         "tituloPosiciones tituloPosiciones"
         "tabla-mundial-de-pilotos tabla-mundial-de-constructores";
     column-gap: 20px;
-    grid-column: auto auto;
-    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
 }
 
 .h1tituloGrillaPosiciones {
@@ -913,12 +924,18 @@ footer {
     font-size: 24px;
     grid-area: tabla-mundial-de-constructores;
     width: 100%;
+    grid-template-areas:
+    "titulo-mundial-de-constructores"
+    "tabla-general-de-constructores";
+    grid-template-columns: auto;
+    grid-template-rows: auto 95%;
 }
 
 .tabla-general-de-constructores {
     display: grid;
     background-color: white;
     font-family: "f1textos";
+    grid-area: tabla-general-de-constructores;
 }
 
 .campeonato {
@@ -935,7 +952,12 @@ footer {
 }
 
 .titulo-mundial-de-constructores {
+    font-family: "F1titulos";
+    font-size: 50px;
+    color: #e10600;
+    justify-content: center;
     display: grid;
+    grid-area: titulo-mundial-de-constructores;
 }
 
 #tabla-pilotos {
@@ -1218,7 +1240,7 @@ footer {
     }
 
     .navbar {
-        visibility: hidden;
+        display: none !important;
     }
 
     .caja-body {
@@ -1239,7 +1261,7 @@ footer {
     }
 
     .navbar-mobile-container {
-        visibility: visible;
+        display: block;
         position: absolute;
         top: 0px;
         left: 0px;
@@ -1247,12 +1269,14 @@ footer {
         img {
             width: 15px;
             height: 15px;
+            margin-left: 10px;
+            margin-top: 10px;
         }
     }
 
     .navbar-mobile {
         display: none;
-        top: 25px;
+        top: 35px;
         left: 0px;
         padding: 5px;
         position: absolute;
@@ -1294,6 +1318,9 @@ footer {
         grid-template-areas:
             "titulo-grilla-circuitos"
             "lista-circuitos";
+            grid-template-columns: auto;
+            justify-content: center;
+            align-items: center;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
@@ -1301,6 +1328,8 @@ footer {
     .lista-circuitos {
         display: grid;
         width: 100vw;
+        align-items: center;
+        justify-content: center;
         grid-template-areas:
             "caja-barein"
             "caja-arabia"
@@ -1325,6 +1354,9 @@ footer {
             "caja-brasil"
             "caja-las-vegas"
             "caja-abu-dabi";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        row-gap: 30px;
         padding: 5px;
     }
 
@@ -1337,23 +1369,35 @@ footer {
             "footer";
         grid-template-columns: auto;
         grid-row: auto auto auto;
+        justify-content: center;
+        align-items: center;
     }
 
+    .titulo-grilla-pilotos {
+        width: 90vw;
+        display: grid;
+        grid-area: tituloGrillaPilotos;
+    }
     .h1tituloGrillaPilotos {
         font-size: 25px;
+        justify-content: center;
     }
 
     .caja-aside-grilla-pilotos {
         display: grid;
-        width: 100vw;
+        width: 90vw;
         grid-template-areas:
             "tituloGrillaPilotos"
             "lista-de-pilotos";
+            justify-content: center;
+            align-items: center;
     }
 
     .lista-de-pilotos {
         display: grid;
-        width: 100vw;
+        width: 90vw;
+        justify-content: center;
+        align-items: center;
         grid-template-areas:
             "piloto1"
             "piloto2"
@@ -1378,7 +1422,7 @@ footer {
     }
 
     div {
-        width: 100vw;
+        width: 90vw;
     }
 
     .h2pilotos {
@@ -1386,7 +1430,7 @@ footer {
     }
 
     img {
-        width: 25px;
+        width: 64px;
         height: auto;
     }
 
@@ -1394,7 +1438,7 @@ footer {
         font-size: 14px;
 
         & img {
-            width: 14px;
+            width: 24px;
             height: auto;
         }
     }
@@ -1404,7 +1448,170 @@ footer {
     }
 
     .box-pilotos {
-        padding-left: 15px;
+        display: grid;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #verstappen {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #leclerc {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #perez {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #russell  {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #sainz  {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #hamilton  {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #norris {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #ocon {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #alonso {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #bottas {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #magnussen {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #gasly {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #stroll {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #tsunoda {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #zhou {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #albon {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #devries {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #piastri {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #hulkenberg {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+    }
+
+    #sargeant {
+        width: 80vw;
+        height: 50vw;
+        padding-left: 40px;
+        padding-top: 45px;
+        padding-bottom: 40px;
     }
 
     .footer {
@@ -1412,6 +1619,7 @@ footer {
         grid-area: footer;
         align-items: center;
         justify-content: center;
+        width: 100vw;
     }
 
     .container-body-comunidad {
@@ -1424,15 +1632,14 @@ footer {
     }
 
     .container-redes-sociales {
-        display: grid;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
-        grid-template-areas:
-        "florencia-mancilla icono-instagram"
-        "comunidad-reddit icono-reddit"
-        "copy f1";
-        grid-template-rows: auto auto;
+        background-color: #e10600;
     }
-    .container-comunidad {
+    .container-comunidad                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            {
         display: grid;
         grid-area: container-comunidad;
         width: 100vw;
@@ -1515,6 +1722,9 @@ footer {
         "tituloPosiciones"
         "tabla-mundial-de-pilotos"
         "tabla-mundial-de-constructores";
-
+        grid-template-columns: auto;
+    }
+    .tabla-mundial-de-pilotos {
+        width: 100vw;
     }
 }

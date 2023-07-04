@@ -16,7 +16,7 @@
 
 <body class="container-body-posiciones">
     <header>
-        <img src="../assets/images/logos/banner-fino.png" alt="Banner F1 Rookies Argentina" width="1380" height="150">
+        <img src="../assets/images/logos/banner-fino.png" alt="Banner F1 Rookies Argentina" width="100%">
         <div class="caja-titulo-general">
         </div>
     </header>
@@ -39,25 +39,38 @@
             </ul>
         </div>
     </nav>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <ul class="inicio">
-                    <li class="nav-item" #inicio><a href="../Index.html" class="inicio">Inicio</a></li>
-                </ul>
-                <ul class="submenu">
-                    <li class="nav-item"><a href="./pilotos.html">Pilotos</a>
-                    </li>
-                    <li class="nav-item"><a href="./circuitos.html">Circuitos</a>
-                    </li>
-                    <li class="nav-item"><a href="./posiciones.html">Posiciones</a>
-                    </li>
-                    <li class="nav-item"><a href="#">Comunidad</a>
-                    </li>
-                </ul>
-            </ul>
-        </div>
-    </nav>
+    <div class="navbar-mobile-container">
+        <img id="menu-logo" src="../assets/images/logos/menu-icon.png" alt="auto">
+        <nav class="navbar-mobile">
+                <div class="container-fluid">
+                        <ul class="navbar-nav">
+                                <ul class="inicio">
+                                        <li class="nav-item" #inicio><a href="../Index.html"
+                                                        class="inicio">Inicio</a></li>
+                                </ul>
+                                <ul class="submenu">
+                                        <li class="nav-item"><a href="./pilotos.html">Pilotos</a>
+                                        </li>
+                                        <li class="nav-item"><a href="./circuitos.html">Circuitos</a></li>
+                                        <li class="nav-item"><a href="#">Posiciones</a>
+                                        </li>
+                                        <li class="nav-item"><a href="./comunidad.html">Comunidad</a></li>
+                                </ul>
+                                <li class="nav-item hamburger-menu">
+                                        <a href="../Index.html" class="hamburger-icon"></a>
+                                        <ul class="dropdown-menu">
+                                                <li><a href="./equipos.html">Equipos</a></li>
+                                                <li><a href="./pilotos.html">Pilotos</a></li>
+                                                <li><a href="./circuitos.html">Circuitos</a></li>
+                                                <li><a href="#">Posiciones</a>
+                                                </li>
+                                                <li><a href="./comunidad.html">Comunidad</a></li>
+                                        </ul>
+                                </li>
+                        </ul>
+                </div>
+        </nav>
+</div>
     <article class="container-tabla-posiciones">
         <div class="posiciones">
             <h1 class="h1tituloGrillaPosiciones" 1>Posiciones</h1>
