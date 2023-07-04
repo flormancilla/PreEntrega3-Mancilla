@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="F1 Rookies Arg: la guía definitiva para los fanáticos de la Fórmula 1 en Argentina. Descubri todo sobre los pilotos, circuitos y posiciones de la temporada actual.">
+        <meta name="keywords"
+                content="F1, Formula1, Verstappen, Leclerc, Checo Perez, Carlos Sainz, Norris, Hamilton, Russell, Piastri, Sargent, Albon, tsunoda, de vries, bottas, zhou, gasly, ocon, alonso, stroll, hulkenberg, magnussen, ferrari, red bull, mercedes, aston martin, williams, mc laren, haas, alfa romeo, alphatauri, circuitos, automovilismo, deporte de motor">
+        <link rel="shortcut icon" href="../assets/images/logos/favicon.png">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <title>F1 Rookies Arg - Comunidad Rookies</title>
+</head>
+
+<body class="container-body-comunidad">
+        <header>
+                <img src="../assets/images/logos/banner-fino.png" alt="Banner F1 Rookies Argentina" width="auto">
+                <div class="caja-titulo-general">
+                </div>
+        </header>
+        <nav class="navbar">
+                <div class="container-fluid">
+                        <ul class="navbar-nav">
+                                <ul class="inicio">
+                                        <li class="nav-item" #inicio><a href="../Index.html"
+                                                        class="inicio">Inicio</a></li>
+                                </ul>
+                                <ul class="submenu">
+                                        <li class="nav-item"><a href="./pilotos.html">Pilotos</a>
+                                        </li>
+                                        <li class="nav-item"><a href="./circuitos.html">Circuitos</a>
+                                        </li>
+                                        <li class="nav-item"><a href="./posiciones.html">Posiciones</a>
+                                        </li>
+                                        <li class="nav-item"><a href="#">Comunidad</a>
+                                        </li>
+                                </ul>
+                        </ul>
+                </div>
+        </nav>
+        <div class="navbar-mobile-container">
+                <img id="menu-logo" src="../assets/images/logos/menu-icon.png" alt="auto">
+                <nav class="navbar-mobile">
+                        <div class="container-fluid">
+                                <ul class="navbar-nav">
+                                        <ul class="inicio">
+                                                <li class="nav-item" #inicio><a href="../Index.html" class="inicio">Inicio</a></li>
+                                        </ul>
+                                        <ul class="submenu">
+                                                <li class="nav-item"><a href="./pilotos.html">Pilotos</a>
+                                                </li>
+                                                <li class="nav-item"><a href="./circuitos.html">Circuitos</a></li>
+                                                <li class="nav-item"><a href="./posiciones.html">Posiciones</a>
+                                                </li>
+                                                <li class="nav-item"><a href="./comunidad.html">Comunidad</a></li>
+                                        </ul>
+                                        <li class="nav-item hamburger-menu">
+                                                <a href="../Index.html" class="hamburger-icon"></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="./equipos.html">Equipos</a></li>
+                                                        <li><a href="./pilotos.html">Pilotos</a></li>
+                                                        <li><a href="./circuitos.html">Circuitos</a></li>
+                                                        <li><a href="./posiciones.html">Posiciones</a>
+                                                        </li>
+                                                        <li><a href="#">Comunidad</a></li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </div>
+                </nav>
+        </div>
+        <div class="container-comunidad">
+                <div class="titulo-comunidad">
+                        <h1>COMUNIDAD ROOKIES</h1>
+                </div>
+                <article class="formulario-noticias">
+                        <form class="container-form" method="post" enctype="text">
+                                <div class="titulo-form">
+                                        <h2 id="titulo-formulario-inscripcion>">Recibe noticias personalizadas
+                                        </h2>
+                                </div>
+                                <div class="datos-personales">
+                                        <p class="parrafos-formulario-inscripcion>">Como deseas que te llamemos:
+                                        </p>
+                                        <input type="text" name="Nombre" placeholder="Nombre o apodo">
+                                        <p class="parrafos-formulario-inscripcion>">E-mail:</p>
+                                        <input type="text" name="email" placeholder="Dirección de correo electronico">
+                                </div>
+                                <div class="equipos-favs">
+                                        <div class="titulo-equipos-favs">
+                                                <p class="parrafos-formulario-inscripcion>">Equipo/s favorito/s:</p>
+                                        </div>
+                                        <div class="equipos-grupo-1">
+                                                <label><input type="checkbox" name="alfa-romeo">Alfa
+                                                        Romeo</label>
+                                                <label><input type="checkbox" name="alphatauri">AlphaTauri</label>
+                                                <label><input type="checkbox" name="alpine">Alpine</label>
+                                        </div>
+                                        <div class="equipos-grupo-2">
+                                                <label><input type="checkbox" name="aston-martin">Aston
+                                                        Martin</label>
+                                                <label><input type="checkbox" name="ferrari">Ferrari</label>
+                                                <label><input type="checkbox" name="hass">Hass</label>
+                                        </div>
+                                        <div class="equipos-grupo-3">
+                                                <label><input type="checkbox" name="mclaren">McLaren</label>
+                                                <label><input type="checkbox" name="mercedes">Mercedes</label>
+                                                <label><input type="checkbox" name="Red-Bull">RedBull</label>
+                                        </div>
+                                        <div class="equipos-grupo-4">
+                                                <label><input type="checkbox" name="williams">Williams</label>
+                                        </div>
+                                </div>
+                                <div class="pilotos-favs">
+                                        <div class="titulo-pilotos-favs">
+                                                <p class="parrafos-formulario-inscripcion>">Piloto/s favorito:</p>
+                                        </div>
+                                        <div class="pilotos-grupo-1">
+                                                <label><input type="checkbox" name="Albon"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/23.png"
+                                                                alt="numero veintitres" width="32px">Alex Albon</label>
+                                                <label><input type="checkbox" name="sainz"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/55.png"
+                                                                alt="numero cincuenta y cinco" width="32px">Carlos
+                                                        Sainz</label>
+                                                <label><input type="checkbox" name="Leclerc"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/16.png"
+                                                                alt="numero dieciseis" width="32px">Charles
+                                                        Leclerc</label>
+                                        </div>
+                                        <div class="pilotos-grupo-2">
+                                                <label><input type="checkbox" name="ocon"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/31.png"
+                                                                alt="numero treinta y uno" width="32px">Esteban
+                                                        Ocon</label>
+                                                <label><input type="checkbox" name="Alonso"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/14.png"
+                                                                alt="numero catorce" width="32px">Fernando
+                                                        Alonso</label>
+                                                <label><input type="checkbox" name="Russell"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/63.png"
+                                                                alt="numero sesenta y tres" width="32px">George
+                                                        Russell</label>
+                                        </div>
+                                        <div class="pilotos-grupo-3">
+                                                <label><input type="checkbox" name="Zhou"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/24.png"
+                                                                alt="numero veinticuatro" width="32px">Guanyu
+                                                        Zhou</label>
+                                                <label><input type="checkbox" name="Magnussen"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/20.png"
+                                                                alt="numero veinte" width="32px">Kevin Magnussen</label>
+                                                <label><input type="checkbox" name="Stroll"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/18.png"
+                                                                alt="numero dieciocho" width="32px"> Lance
+                                                        Stroll</label>
+                                        </div>
+                                        <div class="pilotos-grupo-4">
+                                                <label><input type="checkbox" name="norris"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/4.png"
+                                                                alt="numero cuatro" width="32px">Lando Norris</label>
+                                                <label><input type="checkbox" name="Hamilton"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/44.png"
+                                                                alt="numero cuarenta y cuatro" width="32px">Lewis
+                                                        Hamilton</label>
+                                                <label><input type="checkbox" name="Sargeant"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/2.png"
+                                                                alt="numero dos" width="32px">Logan Sargeant</label>
+                                        </div>
+                                        <div class="pilotos-grupo-5">
+                                                <label><input type="checkbox" name="Verstappen"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/1.png"
+                                                                alt="numero uno" width="32px">Max
+                                                        Verstappen</label>
+                                                <label><input type="checkbox" name="Hulkenberg"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/27.png"
+                                                                alt="numero veintisiete" width="32p">Nico
+                                                        Hulkenberg</label>
+                                                <label><input type="checkbox" name="devries"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/21.png"
+                                                                alt="numero veintiuno" width="32px">Nyck de
+                                                        Vries</label>
+                                        </div>
+                                        <div class="pilotos-grupo-6">
+                                                <label><input type="checkbox" name="piastri"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/81.png"
+                                                                alt="numero ochenta y uno" width="32px">Oscar
+                                                        Piastri</label>
+                                                <label><input type="checkbox" name="Gasly"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/10.png"
+                                                                alt="numero diez" width="32px">Pierre Gasly</label>
+                                                <label><input type="checkbox" name="Perez"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/11.png"
+                                                                alt="numero once" width="32px">Sergio Perez</label>
+                                        </div>
+                                        <div class="pilotos-grupo-7">
+                                                <label><input type="checkbox" name="bottas"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/77.png"
+                                                                alt="numero setenta y siete" width="32px">Valtteri
+                                                        Bottas</label>
+                                                <label><input type="checkbox" name="Tsunoda"><img
+                                                                src="../assets/Images/Pilotos/numeros-pilotos/22.png"
+                                                                alt="numero veintidos" width="32px">Yuki Tsunoda</label>
+                                        </div>
+                                </div>
+                                <div class="boton-subs">
+                                        <input type="submit" value="Suscribirse">
+                                </div>
+                        </form>
+                </article>
+                <aside class="caja-redes">
+                        <div class="redes">
+                                <div class="container-twitter">
+                                        <a href="https://twitter.com"><img
+                                                        src="../assets/images/logos/twitter-clasico.png"
+                                                        alt="logo de twitter" width="120px"></a>
+                                        <p>Comunidad</p>
+                                        <p>Twitter</p>
+                                </div>
+                                <div class="container-reddit">
+                                        <a href="https://www.reddit.com/r/RookiesF1Arg/hot/"><img
+                                                        src="../assets/Images/Logos/reddit.png" alt="logo reddit"
+                                                        width="120px"></a>
+                                        <p>Comunidad</p>
+                                        <p>Reddit</p>
+                                </div>
+                        </div>
+                        <div class="reddit-preview">
+                                <iframe src="https://www.reddit.com/r/RookiesF1Arg/hot/" width="500px" height="500px"
+                                        name="Vista-Reddit"></iframe>
+                        </div>
+                </aside>
+        </div>
+        <footer id="footer-grilla" class="text-center text-xxl-start">
+                <div class="container-redes-sociales">
+                        <div class="florencia-mancilla">
+                                <p>Realización y organización por Florencia Mancilla.</p>
+                        </div>
+                        <div class="icono-instagram">
+                                <a href="www.instagram.com/flormancilla"><img
+                                                src="../assets/images/logos/instagram-icon.png" width="32px"></a>
+                        </div>
+                        <div class="comunidad-reddit">
+                                <p>Comunidad Reddit</p>
+                        </div>
+                        <div class="icono-reddit">
+                                <a href="https://www.reddit.com/r/RookiesF1Arg/hot/"><img
+                                                src="../assets/images/logos/reddit.png" width="32px"></a>
+                        </div>
+                        <div class="copy">
+                                <p>Fuente Imagenes</p>
+                        </div>
+                        <div class="f1"><a href=https://formula1.com>
+                                        <p>F1©
+                                </a> 2023.</p>
+                        </div>
+                </div>
+        </footer>
+</body>
+
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+                let menuLogo = document.getElementById("menu-logo");
+                let navbarMobile = document.querySelector(".navbar-mobile");
+                menuLogo.addEventListener("click", function () {
+                        navbarMobile.classList.toggle("show");
+                        if (menuLogo.src.includes("menu-icon.png")) {
+                                menuLogo.src = "../assets/images/logos/close-icon.png";
+                        } else {
+                                menuLogo.src = "../assets/images/logos/menu-icon.png";
+                        }
+                });
+        });
+</script>
+
+</html>
